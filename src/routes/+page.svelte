@@ -73,7 +73,9 @@
 </script>
 
 <div class="main-container">
-	<h1>To do list on Svelte!</h1>
+	<div class="title-container">
+		<h1>To do list on Svelte!</h1>
+	</div>
 
 	<div class="header-container">
 		<div class="header-left">
@@ -115,6 +117,10 @@
 		width: 100%;
 	}
 
+	.title-container {
+		padding: 10px;
+	}
+
 	.todo-container {
 		display: flex;
 		padding: 10px;
@@ -124,6 +130,7 @@
 	}
 
 	.header-container {
+		padding: 10px;
 		display: flex;
 		justify-content: space-between;
 	}
@@ -150,5 +157,13 @@
 
 	.done-status-item {
 		background-color: #51bc8f;
+	}
+
+	input,
+	select,
+	button {
+		height: 20px;
+		border: 1px solid black;
+		border-radius: 4px;
 	}
 </style>
